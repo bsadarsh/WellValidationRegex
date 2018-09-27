@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 17.875, 35" name="RushmoreSPValidationEngineDAL">
+  <DataContextMoniker Name="/RushmoreSPValidationEngineDALDataContext" />
+  <nestedChildShapes>
+    <classShape Id="19daf3cb-52fc-4b43-8754-f10ed55af9be" absoluteBounds="11.5, 0.875, 2, 1.7708968098958329">
+      <DataClassMoniker Name="/RushmoreSPValidationEngineDALDataContext/t_FieldValidation" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1ecfb7a5-28ba-4a30-8413-c7bab3431058" absoluteBounds="11.515, 1.335, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="de8676e2-b79b-43c5-af3d-8267e81970e7" absoluteBounds="9.75, 8.75, 2, 1.7708968098958344">
+      <DataClassMoniker Name="/RushmoreSPValidationEngineDALDataContext/t_FieldValidationErrorCode" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3be60055-d8f3-4601-bd58-0969932bfa2c" absoluteBounds="9.765, 9.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f369e6eb-1297-44f0-b22b-1d5b60344ca4" absoluteBounds="8.75, 1.25, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/RushmoreSPValidationEngineDALDataContext/t_FieldValidationLevel" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f14dad23-9493-4dab-a734-f8317b16f8cd" absoluteBounds="8.765, 1.71, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="af7945ce-16be-4104-b98e-95f9585f3b09" absoluteBounds="14.25, 1.125, 2, 1.3862939453125003">
+      <DataClassMoniker Name="/RushmoreSPValidationEngineDALDataContext/t_FieldValidationRelated" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bb327077-87f2-41f0-9264-c49052543426" absoluteBounds="14.265, 1.585, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="356f8ba0-c40a-4e65-98e9-f16ce09ed232" absoluteBounds="6.25, 1, 2, 3.5016097005208326">
+      <DataClassMoniker Name="/RushmoreSPValidationEngineDALDataContext/t_Operator" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d1c9744e-da96-4421-88d6-d64f8dacbccb" absoluteBounds="6.265, 1.46, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6d3d6663-e6c5-4ad9-bfe3-a8019ad4bdfb" absoluteBounds="3.5, 7.375, 2, 1.7708968098958335">
+      <DataClassMoniker Name="/RushmoreSPValidationEngineDALDataContext/tLkp_Group" />
+      <nestedChildShapes>
+        <elementListCompartment Id="23357aa1-32a8-441b-ae37-941a5961cd56" absoluteBounds="3.515, 7.835, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="18f8cf55-74b1-4568-908e-da695688a817" absoluteBounds="3.5, 1.625, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/RushmoreSPValidationEngineDALDataContext/t_Country" />
+      <nestedChildShapes>
+        <elementListCompartment Id="62a36414-7e44-4f4c-a101-b3e94ff22bd2" absoluteBounds="3.515, 2.085, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="67ad96c9-8e96-4543-9be2-a1d87fe52e98" absoluteBounds="3.5, 5.125, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/RushmoreSPValidationEngineDALDataContext/tLkp_Company" />
+      <nestedChildShapes>
+        <elementListCompartment Id="84bcc1a8-6fe2-478a-b622-4fa1853f0fd2" absoluteBounds="3.515, 5.585, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e15aff33-5339-4b90-b79d-9c3891e7dfc1" absoluteBounds="6.75, 5.875, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/RushmoreSPValidationEngineDALDataContext/tLkp_RigType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cbb5a63b-e80a-447c-ba00-7a289b69d23c" absoluteBounds="6.765, 6.335, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a6f08216-9754-4676-b6a3-8b765882b888" absoluteBounds="9.5, 5.875, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/RushmoreSPValidationEngineDALDataContext/tLnk_RigNameType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cb2658af-a75e-4387-939b-d3d38d10e4a9" absoluteBounds="9.515, 6.335, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="261dddad-0140-4e03-8cf0-dafb2e56091b" absoluteBounds="6.75, 8.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/RushmoreSPValidationEngineDALDataContext/t_RigName" />
+      <nestedChildShapes>
+        <elementListCompartment Id="71358fff-4085-446e-b736-f2dab4870170" absoluteBounds="6.765, 9.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8819c379-dd78-4ae8-ac93-413fb7834a8d" absoluteBounds="0.75, 10.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/RushmoreSPValidationEngineDALDataContext/tLkp_ExchangeRate" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a90f098f-dff0-4394-a76d-56c32ba79ac4" absoluteBounds="0.765, 11.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3f2b3c98-db71-46ed-b29f-48da3b18a5c9" absoluteBounds="0.75, 2, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/RushmoreSPValidationEngineDALDataContext/tLkp_Region" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3dd96372-008e-455e-a870-1cf5ffa43943" absoluteBounds="0.765, 2.46, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ebe02601-0935-4a6d-8435-85bb8cc029f1" absoluteBounds="3.75, 11.75, 2, 9.4629541015625023">
+      <DataClassMoniker Name="/RushmoreSPValidationEngineDALDataContext/v_ParticipatingOperator" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bc657db4-ea69-49d4-9032-74bb6c626000" absoluteBounds="3.765, 12.21, 1.9700000000000002, 8.9029541015625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d4aefbd6-59da-445f-b5fb-0eb8f3814714" absoluteBounds="6.75, 11.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/RushmoreSPValidationEngineDALDataContext/v_ListCountriesInUse" />
+      <nestedChildShapes>
+        <elementListCompartment Id="76aee101-92ad-4875-972c-3f72c485327b" absoluteBounds="6.765, 12.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="08ed5b82-2b59-47e3-ab40-5b6701efdeb2" absoluteBounds="9.75, 11.75, 2, 4.8477197265624987">
+      <DataClassMoniker Name="/RushmoreSPValidationEngineDALDataContext/t_StagingWell" />
+      <nestedChildShapes>
+        <elementListCompartment Id="aaf40a55-20be-4ef0-8cbf-ed7c575eaeb4" absoluteBounds="9.765, 12.21, 1.9700000000000002, 4.2877197265625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b5ef1570-b60d-4042-ba43-1a752730e7a8" absoluteBounds="12.75, 3.75, 2, 31.000714518229167">
+      <DataClassMoniker Name="/RushmoreSPValidationEngineDALDataContext/tDPR_StagingWellData" />
+      <nestedChildShapes>
+        <elementListCompartment Id="04045407-0394-410f-a9d9-f2f64c84dae9" absoluteBounds="12.765, 4.21, 1.9700000000000002, 30.440714518229164" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(10.75 : 1.84699625651042); (11.5 : 1.84699625651042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/RushmoreSPValidationEngineDALDataContext/t_FieldValidationLevel/t_FieldValidationLevel_t_FieldValidation" />
+      <nodes>
+        <classShapeMoniker Id="f369e6eb-1297-44f0-b22b-1d5b60344ca4" />
+        <classShapeMoniker Id="19daf3cb-52fc-4b43-8754-f10ed55af9be" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(13.5 : 1.81814697265625); (14.25 : 1.81814697265625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/RushmoreSPValidationEngineDALDataContext/t_FieldValidation/t_FieldValidation_t_FieldValidationRelated" />
+      <nodes>
+        <classShapeMoniker Id="19daf3cb-52fc-4b43-8754-f10ed55af9be" />
+        <classShapeMoniker Id="af7945ce-16be-4104-b98e-95f9585f3b09" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 8.03125); (6.46875 : 8.03125); (6.46875 : 4.50160970052083)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/RushmoreSPValidationEngineDALDataContext/tLkp_Group/tLkp_Group_t_Operator" />
+      <nodes>
+        <classShapeMoniker Id="6d3d6663-e6c5-4ad9-bfe3-a8019ad4bdfb" />
+        <classShapeMoniker Id="356f8ba0-c40a-4e65-98e9-f16ce09ed232" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 2.70274983723958); (6.25 : 2.70274983723958)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/RushmoreSPValidationEngineDALDataContext/t_Country/t_Country_t_Operator" />
+      <nodes>
+        <classShapeMoniker Id="18f8cf55-74b1-4568-908e-da695688a817" />
+        <classShapeMoniker Id="356f8ba0-c40a-4e65-98e9-f16ce09ed232" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 5.46875); (6.3281225 : 5.46875); (6.3281225 : 4.50160970052083)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/RushmoreSPValidationEngineDALDataContext/tLkp_Company/tLkp_Company_t_Operator" />
+      <nodes>
+        <classShapeMoniker Id="67ad96c9-8e96-4543-9be2-a1d87fe52e98" />
+        <classShapeMoniker Id="356f8ba0-c40a-4e65-98e9-f16ce09ed232" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 2.78929768880208); (3.5 : 2.78929768880208)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/RushmoreSPValidationEngineDALDataContext/tLkp_Region/tLkp_Region_t_Country" />
+      <nodes>
+        <classShapeMoniker Id="3f2b3c98-db71-46ed-b29f-48da3b18a5c9" />
+        <classShapeMoniker Id="18f8cf55-74b1-4568-908e-da695688a817" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.75 : 6.56814697265625); (9.5 : 6.56814697265625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/RushmoreSPValidationEngineDALDataContext/tLkp_RigType/tLkp_RigType_tLnk_RigNameType" />
+      <nodes>
+        <classShapeMoniker Id="e15aff33-5339-4b90-b79d-9c3891e7dfc1" />
+        <classShapeMoniker Id="a6f08216-9754-4676-b6a3-8b765882b888" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.75 : 8.75); (9.125 : 8.375); (9.125 : 6.94597245898438); (9.5 : 6.94597245898438)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/RushmoreSPValidationEngineDALDataContext/t_RigName/t_RigName_tLnk_RigNameType" />
+      <nodes>
+        <classShapeMoniker Id="261dddad-0140-4e03-8cf0-dafb2e56091b" />
+        <classShapeMoniker Id="a6f08216-9754-4676-b6a3-8b765882b888" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="8ccfe78c-09b6-4f7b-9318-d3f1888357cc" absoluteBounds="15.625, 3.5, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/RushmoreSPValidationEngineDALDataContext/tDPR_StagingWellTDData" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4cd48818-a8ee-4c2a-b618-34f3f7b75ef7" absoluteBounds="15.64, 3.96, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

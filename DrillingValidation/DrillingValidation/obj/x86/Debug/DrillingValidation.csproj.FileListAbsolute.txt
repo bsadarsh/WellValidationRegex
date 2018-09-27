@@ -1,0 +1,5 @@
+C:\DrillingValidation\DrillingValidation\bin\Debug\DrillingValidation.exe
+C:\DrillingValidation\DrillingValidation\bin\Debug\DrillingValidation.pdb
+C:\DrillingValidation\DrillingValidation\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\DrillingValidation\DrillingValidation\obj\x86\Debug\DrillingValidation.exe
+C:\DrillingValidation\DrillingValidation\obj\x86\Debug\DrillingValidation.pdb

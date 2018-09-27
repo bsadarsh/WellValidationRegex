@@ -1,0 +1,20 @@
+c:\users\adarsha\documents\visual studio 2010\Projects\Validation\ConsoleApplication1\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\adarsha\documents\visual studio 2010\Projects\Validation\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+c:\users\adarsha\documents\visual studio 2010\Projects\Validation\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+c:\users\adarsha\documents\visual studio 2010\Projects\Validation\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.exe
+c:\users\adarsha\documents\visual studio 2010\Projects\Validation\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.pdb
+C:\Validation\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.exe
+C:\Validation\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.pdb
+C:\Validation\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Validation\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Validation\ConsoleApplication1\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Project\Validation\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.exe
+C:\Project\Validation\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.pdb
+C:\Project\Validation\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Project\Validation\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Project\Validation\ConsoleApplication1\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Project\Validation\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.exe
+D:\Project\Validation\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.pdb
+D:\Project\Validation\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+D:\Project\Validation\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+D:\Project\Validation\ConsoleApplication1\obj\x86\Debug\ResolveAssemblyReference.cache

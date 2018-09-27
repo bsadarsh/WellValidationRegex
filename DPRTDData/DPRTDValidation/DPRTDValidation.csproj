@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{90984217-792F-4D87-9021-DC545C803C70}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DPRTDValidation</RootNamespace>
+    <AssemblyName>DPRTDValidation</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>ValidationEngineKey.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CodeEffects.Rule">
+      <HintPath>..\..\Dll\CodeEffects.Rule.dll</HintPath>
+    </Reference>
+    <Reference Include="GemBox.Spreadsheet, Version=35.1.40.1025, Culture=neutral, PublicKeyToken=b1b72c69714d4847, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Program Files\GemBox Software\GemBox.Spreadsheet Free 3.5\Bin\NET40\GemBox.Spreadsheet.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\Absence13.gif" />
+    <Content Include="Images\Absence2.gif" />
+    <Content Include="Images\Absence3.gif" />
+    <Content Include="Images\Absence4.gif" />
+    <Content Include="Images\Absence5.gif" />
+    <Content Include="Images\Absence6.gif" />
+    <Content Include="Images\Absence7.gif" />
+    <Content Include="Images\Absence8.gif" />
+    <Content Include="Images\AnimatedBullet.gif" />
+    <Content Include="Images\animated_dot.gif" />
+    <Content Include="Images\ani_Monitor.gif" />
+    <Content Include="Images\arrow.png" />
+    <Content Include="Images\arrow_left.gif" />
+    <Content Include="Images\arrow_left2.gif" />
+    <Content Include="Images\arrow_right.gif" />
+    <Content Include="Images\arrow_right2.gif" />
+    <Content Include="Images\calendar1.gif" />
+    <Content Include="Images\calendar2.gif" />
+    <Content Include="Images\circle.gif" />
+    <Content Include="Images\comment.gif" />
+    <Content Include="Images\cross.gif" />
+    <Content Include="Images\cross_import.gif" />
+    <Content Include="Images\cross_small.gif" />
+    <Content Include="Images\default.gif" />
+    <Content Include="Images\diamond.gif" />
+    <Content Include="Images\dotdotdot.gif" />
+    <Content Include="Images\down.gif" />
+    <Content Include="Images\downarrow.gif" />
+    <Content Include="Images\downarrowhover.gif" />
+    <Content Include="Images\downRed.gif" />
+    <Content Include="Images\email.png" />
+    <Content Include="Images\folder.gif" />
+    <Content Include="Images\FolderUp.gif" />
+    <Content Include="Images\green.gif" />
+    <Content Include="Images\headershading.gif" />
+    <Content Include="Images\header_base.gif" />
+    <Content Include="Images\header_datatitle.gif" />
+    <Content Include="Images\header_left.gif" />
+    <Content Include="Images\header_right.gif" />
+    <Content Include="Images\header_submenubase.gif" />
+    <Content Include="Images\header_submenuleft.gif" />
+    <Content Include="Images\header_submenuright.gif" />
+    <Content Include="Images\header_topshading.gif" />
+    <Content Include="Images\menu_sep.gif" />
+    <Content Include="Images\new.gif" />
+    <Content Include="Images\OpList_Bullet.gif" />
+    <Content Include="Images\padlock.gif" />
+    <Content Include="Images\pdf.gif" />
+    <Content Include="Images\question.gif" />
+    <Content Include="Images\red.gif" />
+    <Content Include="Images\right.gif" />
+    <Content Include="Images\rightarrow.gif" />
+    <Content Include="Images\rightarrow2.gif" />
+    <Content Include="Images\rightarrow3.gif" />
+    <Content Include="Images\rightarrowhover.gif" />
+    <Content Include="Images\Rushmore.gif" />
+    <Content Include="Images\search.gif" />
+    <Content Include="Images\searchhover.gif" />
+    <Content Include="Images\selected.gif" />
+    <Content Include="Images\sigma.gif" />
+    <Content Include="Images\spacer.gif" />
+    <Content Include="Images\speech.gif" />
+    <Content Include="Images\speech0.gif" />
+    <Content Include="Images\speech1.gif" />
+    <Content Include="Images\speech1a.gif" />
+    <Content Include="Images\speech1b.gif" />
+    <Content Include="Images\speech2.gif" />
+    <Content Include="Images\speech3.gif" />
+    <Content Include="Images\speech4.gif" />
+    <Content Include="Images\speech5.gif" />
+    <Content Include="Images\speech6.gif" />
+    <Content Include="Images\speech7.gif" />
+    <Content Include="Images\speech8.gif" />
+    <Content Include="Images\speechBubble.gif" />
+    <Content Include="Images\submenu_sep.gif" />
+    <Content Include="Images\tick.gif" />
+    <Content Include="Images\tick_import.gif" />
+    <Content Include="Images\tick_small.gif" />
+    <Content Include="Images\tick_small_red.gif" />
+    <Content Include="Images\time.swf" />
+    <Content Include="Images\up.gif" />
+    <Content Include="Images\uparrow.gif" />
+    <Content Include="Images\uparrowhover.gif" />
+    <Content Include="Images\upRed.gif" />
+    <Content Include="Images\warning.gif" />
+    <Content Include="Images\Working.gif" />
+    <Content Include="Scripts\ajax.js" />
+    <Content Include="Scripts\ajaxContent.js" />
+    <Content Include="Scripts\ajaxNew.js" />
+    <Content Include="Scripts\costs.js" />
+    <Content Include="Scripts\functions.js" />
+    <Content Include="Scripts\layers.js" />
+    <Content Include="Scripts\lib.js" />
+    <Content Include="Scripts\speech.js" />
+    <Content Include="Scripts\tabs.js" />
+    <Content Include="Style\details.css" />
+    <Content Include="Style\main.css" />
+    <Content Include="Style\results.css" />
+    <Content Include="Style\tabs.css" />
+    <Content Include="Style\website.css" />
+    <Content Include="Style\wells_All.css" />
+    <Content Include="Style\wells_Queried.css" />
+    <Content Include="Style\wells_Valid.css" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="WebUpdate.aspx" />
+    <Content Include="WebUpdateStart.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Code\ColumnAttributeMapping.cs" />
+    <Compile Include="Code\SubmissionImporter.cs" />
+    <Compile Include="Code\ValidationEngine.cs" />
+    <Compile Include="Code\ValidationError.cs" />
+    <Compile Include="Code\ValidationObjectsConfiguration.cs" />
+    <Compile Include="Code\ValidationObjectsConfigurationType.cs" />
+    <Compile Include="Code\ValidationObjectsConfigurationTypeCollection.cs" />
+    <Compile Include="DAL\RushmoreSPValidationEngineDAL.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RushmoreSPValidationEngineDAL.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebUpdate.aspx.cs">
+      <DependentUpon>WebUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebUpdate.aspx.designer.cs">
+      <DependentUpon>WebUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebUpdateStart.aspx.cs">
+      <DependentUpon>WebUpdateStart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebUpdateStart.aspx.designer.cs">
+      <DependentUpon>WebUpdateStart.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DAL\RushmoreSPValidationEngineDAL.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>RushmoreSPValidationEngineDAL.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Images\Thumbs.db" />
+    <None Include="ValidationEngineKey.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DAL\RushmoreSPValidationEngineDAL.dbml.layout">
+      <DependentUpon>RushmoreSPValidationEngineDAL.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>60176</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,14 @@
+.ValidWells {
+	background-color: #F2E2DB;
+	display:block;
+}
+.QueriedWells {
+	background-color: #F8EDE9;
+	display:block;
+}
+#scroller {
+	overflow: auto;
+	position: relative;
+	height: 590px;
+	width: 100%;
+}

@@ -1,0 +1,37 @@
+/* CSS Document */
+
+#details {
+	width:750px;
+	height:530px;
+	border-bottom: 1px solid #000;
+	border-right: 1px solid #000;
+	border-left: 1px solid #999;
+	border-top: 1px solid #999;
+	background-color:#FFF;
+	position:absolute;
+	top:30px;
+	margin-left:50%;
+	left:-375px;
+	z-index:3;
+	display:none;
+}
+
+#detailsHeader {
+	background-color: #ECCEC4;
+	border-bottom: 1px solid #000;
+	border-left: 1px solid #999;
+	border-top: 1px solid #999;
+	color: #000;
+	font-weight: bold;
+	padding: 4px 2px 4px 5px;
+}
+
+#detailsContent {
+	border-bottom: 1px solid #999;
+	border-right: 1px solid #999;
+	border-left: 1px solid #999;
+	border-top: 1px solid #999;
+	height:440px;
+	padding:10px;
+}
+

@@ -1,0 +1,152 @@
+/* CSS Document */
+
+a.Tab:link, a.Tab:visited {
+	 font-size: 8pt;
+	 font-weight: bold;
+	 color: #000000;
+	 background-color: #F5C0CC;
+	 text-decoration: none;
+	 padding: 1px 4px 0px 4px;
+	 font-family: Arial, Helvetica, sans-serif;
+	 border-top: 1px solid #666666;
+	 border-right: 1px solid #666666;
+	 border-bottom: 1px none #666666;
+	 border-left: 1px solid #666666;
+	 margin: 4px 0px 0px 0px;
+	 height: 15px;
+	 float: left;
+	 width:90px;
+}
+a.Tab:hover {
+	 color: #000000;
+	 background-color: #FFFFFF;
+}
+a.TabSelected:link, a.TabSelected:visited {
+	 font-size: 10pt;
+	 font-weight: bold;
+	 color: #000;
+	 background-color: #EA7A93;
+	 text-decoration: none;
+	 padding: 2px 6px 1px 6px;
+	 font-family: Arial, Helvetica, sans-serif;
+	 border-top: 1px solid #333333;
+	 border-right: 1px solid #333333;
+	 border-bottom: 1px none #333333;
+	 border-left: 1px solid #333333;
+	 margin: 0px;
+	 height: 17px;
+	 float: left;
+	 width:90px;
+}
+a.TabSelected:hover {
+ 	color: #000;
+ 	background-color: #EA7A93;
+}
+.tabsRowOver {
+	background-color: #CCC;
+	cursor: pointer;
+}
+.tabsRowOut {
+	background-color: #FFF;
+}
+#tabView {
+	display: block;
+}
+
+
+
+a.MainTab:link, a.MainTab:visited {
+	 font-size: 8pt;
+	 font-weight: bold;
+	 color: #000000;
+	 background-color: #F5C0CC;
+	 text-decoration: none;
+	 padding: 1px 4px 0px 4px;
+	 font-family: Arial, Helvetica, sans-serif;
+	 border-top: 1px solid #666666;
+	 border-right: 1px solid #666666;
+	 border-bottom: 1px none #666666;
+	 border-left: 1px solid #666666;
+	 margin: 4px 0px 0px 0px;
+	 height: 15px;
+	 float: left;
+	 width:110px;
+}
+a.MainTab:hover {
+	 color: #000000;
+	 background-color: #FFFFFF;
+}
+a.MainTabSelected:link, a.MainTabSelected:visited {
+	 font-size: 10pt;
+	 font-weight: bold;
+	 color: #000;
+	 background-color: #EA7A93;
+	 text-decoration: none;
+	 padding: 2px 6px 1px 6px;
+	 font-family: Arial, Helvetica, sans-serif;
+	 border-top: 1px solid #333333;
+	 border-right: 1px solid #333333;
+	 border-bottom: 1px none #333333;
+	 border-left: 1px solid #333333;
+	 margin: 0px;
+	 height: 17px;
+	 float: left;
+	 width:110px;
+}
+a.MainTabSelected:hover {
+ 	color: #000;
+ 	background-color: #EA7A93;
+}
+.mainTabRowOver {
+	background-color: #CCC;
+	cursor: pointer;
+}
+.mainTabRowOut {
+	background-color: #FFF;
+}
+#mainTabView {
+	display: block;
+}
+
+
+
+.closeButton {
+	 background-color: #F00; 
+	 border: 1px solid #000; 
+	 color: #FFF;
+	 padding-bottom: 1px;
+	 padding-left: 2px;
+	 padding-right: 2px;
+	 font-size:75%;
+	 font-weight: bold;
+	 position: relative;
+	 bottom: 1px;
+}
+
+.rowOver {
+	background-color:#456FA5;
+	color:#fff;
+	cursor: pointer;
+}
+
+.rowOut {
+	background-color: #f9f9f9;
+}
+
+.rowClicked {
+	background-color:#456FA5; /* #ddd; */
+	color:#fff;
+}
+
+#notesTable {
+	overflow-y:auto;
+	height:255px;
+	text-align:left;
+	margin-left:4px;
+}
+
+#historyTable {
+	height:360px;
+	overflow:auto;
+}
+

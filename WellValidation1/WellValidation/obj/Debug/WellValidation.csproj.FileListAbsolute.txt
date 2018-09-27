@@ -1,0 +1,5 @@
+D:\Project\WellValidation1\WellValidation\obj\Debug\ResolveAssemblyReference.cache
+D:\Project\WellValidation1\WellValidation\bin\Debug\WellValidation.dll
+D:\Project\WellValidation1\WellValidation\bin\Debug\WellValidation.pdb
+D:\Project\WellValidation1\WellValidation\obj\Debug\WellValidation.dll
+D:\Project\WellValidation1\WellValidation\obj\Debug\WellValidation.pdb

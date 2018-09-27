@@ -1,0 +1,390 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Live_ReviewsDatabaseFull" Class="RushmoreSPValidationEngineDALDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=D-WP0003056;Initial Catalog=Live_ReviewsDatabaseFull;User ID=saic" SettingsObjectName="ConsoleApplication1.Properties.Settings" SettingsPropertyName="Live_ReviewsDatabaseFullConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.t_FieldValidation" Member="t_FieldValidations">
+    <Type Name="t_FieldValidation">
+      <Column Name="ValidationID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UniqueID" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="AssemblyName" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="ValidationXML" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="LevelID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="t_FieldValidation_t_FieldValidationRelated" Member="t_FieldValidationRelateds" ThisKey="ValidationID" OtherKey="ValidationID" Type="t_FieldValidationRelated" />
+      <Association Name="t_FieldValidationLevel_t_FieldValidation" Member="t_FieldValidationLevel" ThisKey="LevelID" OtherKey="LevelID" Type="t_FieldValidationLevel" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.t_FieldValidationErrorCode" Member="t_FieldValidationErrorCodes">
+    <Type Name="t_FieldValidationErrorCode">
+      <Column Name="ErrorID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ErrorMessage" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="FieldNumber" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ErrorCode" Type="System.String" DbType="NVarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="AssemblyName" Type="System.String" DbType="NVarChar(250) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.t_FieldValidationLevel" Member="t_FieldValidationLevels">
+    <Type Name="t_FieldValidationLevel">
+      <Column Name="LevelID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LevelName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="t_FieldValidationLevel_t_FieldValidation" Member="t_FieldValidations" ThisKey="LevelID" OtherKey="LevelID" Type="t_FieldValidation" />
+    </Type>
+  </Table>
+  <Table Name="dbo.t_FieldValidationRelated" Member="t_FieldValidationRelateds">
+    <Type Name="t_FieldValidationRelated">
+      <Column Name="RelatedAttributeID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ValidationID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Attribute" Type="System.String" DbType="NVarChar(250) NOT NULL" CanBeNull="false" />
+      <Association Name="t_FieldValidation_t_FieldValidationRelated" Member="t_FieldValidation" ThisKey="ValidationID" OtherKey="ValidationID" Type="t_FieldValidation" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.t_Operator" Member="t_Operators">
+    <Type Name="t_Operator">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CompanyID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="BusinessUnit" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CountryID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="WebLogin" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="HeadOffice" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="GroupID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FullOperatorName" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="PreviousOperatorName" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="KeyMessage" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="StageID" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="WebAddress" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="KeyMessageChangeDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="KeyMessageChangedBy" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="tLkp_Group_t_Operator" Member="tLkp_Group" ThisKey="GroupID" OtherKey="ID" Type="tLkp_Group" IsForeignKey="true" />
+      <Association Name="t_Country_t_Operator" Member="t_Country" ThisKey="CountryID" OtherKey="ID" Type="t_Country" IsForeignKey="true" />
+      <Association Name="tLkp_Company_t_Operator" Member="tLkp_Company" ThisKey="CompanyID" OtherKey="ID" Type="tLkp_Company" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tLkp_Group" Member="tLkp_Groups">
+    <Type Name="tLkp_Group">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="GroupName" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="Accurate" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="DemoGroup" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="FullGroupName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Association Name="tLkp_Group_t_Operator" Member="t_Operators" ThisKey="ID" OtherKey="GroupID" Type="t_Operator" />
+    </Type>
+  </Table>
+  <Table Name="dbo.t_Country" Member="t_Countries">
+    <Type Name="t_Country">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Country" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="CountryCode" Type="System.String" DbType="VarChar(3)" CanBeNull="true" />
+      <Column Name="RegionID" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="InUse" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="OtherName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Hide" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="t_Country_t_Operator" Member="t_Operators" ThisKey="ID" OtherKey="CountryID" Type="t_Operator" />
+      <Association Name="tLkp_Region_t_Country" Member="tLkp_Region" ThisKey="RegionID" OtherKey="ID" Type="tLkp_Region" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tLkp_Company" Member="tLkp_Companies">
+    <Type Name="tLkp_Company">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Company" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="Accurate" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="DemoCompany" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="tLkp_Company_t_Operator" Member="t_Operators" ThisKey="ID" OtherKey="CompanyID" Type="t_Operator" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tLnk_RigNameType" Member="tLnk_RigNameTypes">
+    <Type Name="tLnk_RigNameType">
+      <Column Name="RigNameTypeID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="RigNameID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="RigTypeID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="t_RigName_tLnk_RigNameType" Member="t_RigName" ThisKey="RigNameID" OtherKey="RigNameID" Type="t_RigName" IsForeignKey="true" />
+      <Association Name="tLkp_RigType1_tLnk_RigNameType" Member="tLkp_RigType" ThisKey="RigTypeID" OtherKey="RigTypeID" Type="tLkp_RigType" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.t_RigName" Member="t_RigNames">
+    <Type Name="t_RigName">
+      <Column Name="RigNameID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="RigName" Type="System.String" DbType="NVarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="max_water_depth_m" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="max_mtd_m" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Association Name="t_RigName_tLnk_RigNameType" Member="tLnk_RigNameTypes" ThisKey="RigNameID" OtherKey="RigNameID" Type="tLnk_RigNameType" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tLkp_ExchangeRate" Member="tLkp_ExchangeRates">
+    <Type Name="tLkp_ExchangeRate">
+      <Column Name="ExRateID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CurrencyCode" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Date" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ExRate" Type="System.Double" DbType="Float" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tLkp_Region" Member="tLkp_Regions">
+    <Type Name="tLkp_Region">
+      <Column Name="ID" Type="System.Int16" DbType="SmallInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Region" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="LongName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="FullRegionName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="tLkp_Region_t_Country" Member="t_Countries" ThisKey="ID" OtherKey="RegionID" Type="t_Country" />
+    </Type>
+  </Table>
+  <Table Name="dbo.v_ParticipatingOperators" Member="v_ParticipatingOperators">
+    <Type Name="v_ParticipatingOperator">
+      <Column Name="OperatorID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="OperatorStatusID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="GroupName" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="Company" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="Country" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="Region" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="BusinessUnitRevYr" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ParticipationStatus" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="ActivityStatus" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Sleeping" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="CostDataSubmission" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="AccessRestrictionOverride" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="PlaceHolderJF" Type="System.String" DbType="VarChar(8) NOT NULL" CanBeNull="false" />
+      <Column Name="JoinFormStatus" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="AccessRestriction" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="Q1" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Q1Placeholder" Type="System.String" DbType="VarChar(8) NOT NULL" CanBeNull="false" />
+      <Column Name="Q1WellDeclarationStatus" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="Q1SubmissionComplete" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Q1WellsRcd" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Q1DataQueries" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Q1TDChartsQueries" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Q2" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Q2Placeholder" Type="System.String" DbType="VarChar(8) NOT NULL" CanBeNull="false" />
+      <Column Name="Q2WellDeclarationStatus" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="Q2SubmissionComplete" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Q2WellsRcd" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Q2DataQueries" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Q2TDChartsQueries" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Q3" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Q3Placeholder" Type="System.String" DbType="VarChar(8) NOT NULL" CanBeNull="false" />
+      <Column Name="Q3WellDeclarationStatus" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="Q3SubmissionComplete" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Q3WellsRcd" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Q3DataQueries" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Q3TDChartsQueries" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Q4" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Q4Placeholder" Type="System.String" DbType="VarChar(8) NOT NULL" CanBeNull="false" />
+      <Column Name="Q4WellDeclarationStatus" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="Q4SubmissionComplete" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Q4WellsRcd" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Q4DataQueries" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Q4TDChartsQueries" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Review" Type="System.String" DbType="Char(3) NOT NULL" CanBeNull="false" />
+      <Column Name="Year" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.v_ListCountriesInUse" Member="v_ListCountriesInUses">
+    <Type Name="v_ListCountriesInUse">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Region" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="Country" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="CountryCode" Type="System.String" DbType="VarChar(3)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.t_StagingWells" Member="t_StagingWells">
+    <Type Name="t_StagingWell">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="OperatorStatusRevYrID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DataTypeID" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ValidationStatus" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="WellName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="SpecimenWellName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="InHouseName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Field" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="BlockNumber" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Platform" Type="System.String" DbType="NVarChar(40)" CanBeNull="true" />
+      <Column Name="Latitude" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Longitude" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="SubRegion" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DHoleEndQtr" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="OwnDrill" Type="System.String" DbType="VarChar(3)" CanBeNull="true" />
+      <Column Name="DBUpdateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="WebUpdateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="BecameValidDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="WellCreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="LastUpdatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="TDDataHelp" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tDPR_StagingWellData" Member="tDPR_StagingWellDatas">
+    <Type Name="tDPR_StagingWellData">
+      <Column Name="WellID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="HoleType" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="SpudDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DHoleEndDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="LocatorWell" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="Multilateral" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="JunctionType" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="NumLaterals" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="NumMechanicalSTracks" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="ReSpud" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="OriginalName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="WellType" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="PlayType" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="HP" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="HT" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="RigType" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="RigName" Type="System.String" DbType="NVarChar(60)" CanBeNull="true" />
+      <Column Name="DualActivityRig" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="DrillMethod" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Exceptional" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="Complex" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="WaterDepth" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Column Name="SpudDepth" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Column Name="MTD" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Column Name="TVD" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Column Name="DrillInterval" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Column Name="HorizDisplacement" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Column Name="AspectRatio" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Column Name="ComplexRatio" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Column Name="TotalSectionLength" Type="System.Decimal" DbType="Decimal(8,0)" CanBeNull="true" />
+      <Column Name="MaxAngle" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="ExtendedReach" Type="System.String" DbType="VarChar(3)" CanBeNull="true" />
+      <Column Name="FinalBitSize" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Column Name="PreCasings" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="NewCasings" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="UnderBalance" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="FluidType" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="TDMudWt" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Column Name="MaxMudWt" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Column Name="CuttingDisposal" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="CoringDays" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Column Name="CoringInterval" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Column Name="UReamInterval" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Column Name="LogDaysNotTD" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Column Name="LogDaysTD" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Column Name="LogDaysTotal" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Column Name="UReamDays" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Column Name="FEWD" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="ReservoirFormation" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="NewTechniques" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="SlotRecovEnhDays" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Column Name="OffSlotRecoveryOp" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="BatchSet" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DHoleDays" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Column Name="DHoleDaysExUReam" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Column Name="NoOfSuspends" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="SuspendReEnterDays" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Column Name="TotalWellSiteDays" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Column Name="SpudTDDaysExCorLogUReam" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Column Name="WellStatus" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="PAOrSUDays" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Column Name="MetresPerDayOld" Type="System.Decimal" DbType="Decimal(8,3)" CanBeNull="true" />
+      <Column Name="MetresPerDay" Type="System.Decimal" DbType="Decimal(8,3)" CanBeNull="true" />
+      <Column Name="MetresPerDayExCorLogUReam" Type="System.Decimal" DbType="Decimal(8,3)" CanBeNull="true" />
+      <Column Name="DHoleDays1000mOld" Type="System.Decimal" DbType="Decimal(8,3)" CanBeNull="true" />
+      <Column Name="DHoleDays1000m" Type="System.Decimal" DbType="Decimal(8,3)" CanBeNull="true" />
+      <Column Name="WOWCoringDays" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Column Name="WOWLogDays" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Column Name="WOWOtherDays" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Column Name="ITCoringDays" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Column Name="ITLogDays" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Column Name="ITOtherDays" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Column Name="WOWTotalDHoleDays" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Column Name="ITTotalDHoleDays" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Column Name="RigEqFailDays" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Column Name="ServEqFailDays" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Column Name="PlatformDays" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Column Name="OpProblemDays" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Column Name="ForceMajeureDays" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Column Name="MajorITEvents" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="FurtherDetails" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="Comments" Type="System.String" DbType="NVarChar(2000)" CanBeNull="true" />
+      <Column Name="TDChartFilename" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="CalcTotalWow" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Column Name="CalcTotalIT" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Column Name="CalcWowPercent" Type="System.Decimal" DbType="Decimal(8,3)" CanBeNull="true" />
+      <Column Name="CalcITPercent" Type="System.Decimal" DbType="Decimal(8,3)" CanBeNull="true" />
+      <Column Name="NumContingencyGeolST" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="UnusedLenContingencyGS" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="UnusedLenLocatorWell" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="GeolSTWhipstockDays" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Column Name="HasTDRecords" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ExtendedReachPre05" Type="System.String" DbType="VarChar(3)" CanBeNull="true" />
+      <Column Name="NewCasingCount" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="AllCasingCount" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="DrillFloorElevation" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Column Name="ConductorInstalledByDrillingRig" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="OperatorProblemsIT" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Column Name="DownholeProblemsIT" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Column Name="RDI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="oldRDI" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="TotalDaysToEndOfDHPeriod" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Column Name="PASUCompletionDays" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Column Name="CompletionDays" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Column Name="RigContractorIT" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Column Name="ServiceCompanyIT" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Column Name="ExternalProblemsIT" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Column Name="DrillingContractor" Type="System.String" DbType="NVarChar(60)" CanBeNull="true" />
+      <Column Name="MudWeightUnits" Type="System.String" DbType="NVarChar(8)" CanBeNull="true" />
+      <Column Name="RigMoveDays" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Column Name="RigMoveInField" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="OtherOpsDays" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Column Name="PreExisitingCasing1" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PreExisitingCasing2" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PreExisitingCasing3" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PreExisitingCasing4" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PreExisitingCasing5" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PreExisitingCasing6" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PreExisitingCasing7" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PreExisitingCasing8" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PreExisitingCasing9" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PreExisitingCasing10" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PreExistingCasing11" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ConductorCasing" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SplitConductor" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="ExpandableCasingCount" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="NewCasing1" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="NewCasing2" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="NewCasing3" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="NewCasing4" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="NewCasing5" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="NewCasing6" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="NewCasing7" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="NewCasing8" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="NewCasing9" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="NewCasing10" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CasingDrilled" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="DHDaysExCorLogUReam1000m" Type="System.Decimal" DbType="Decimal(10,4)" CanBeNull="true" />
+      <Column Name="RigMoorSystem" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="MoorDays" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Column Name="DeMoorDays" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Column Name="WOWMoorDays" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Column Name="WOWDeMoorDays" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Column Name="EndOfWellOpsDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="WOWBeforeDeMoorDays" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Column Name="APINumber" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Subsalt" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="TVDSaltStart" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Column Name="TVDSaltEnd" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Column Name="DHDaysExCorLog1000m" Type="System.Decimal" DbType="Decimal(8,3)" CanBeNull="true" />
+      <Column Name="DHDaysExCorLog" Type="System.Decimal" DbType="Decimal(8,3)" CanBeNull="true" />
+      <Column Name="MetresPerDayExCorLog" Type="System.Decimal" DbType="Decimal(8,3)" CanBeNull="true" />
+      <Column Name="NPT1000m" Type="System.Decimal" DbType="Decimal(8,3)" CanBeNull="true" />
+      <Column Name="WOW1000m" Type="System.Decimal" DbType="Decimal(8,3)" CanBeNull="true" />
+      <Column Name="ProductiveDays1000m" Type="System.Decimal" DbType="Decimal(8,3)" CanBeNull="true" />
+      <Column Name="CalcProductiveDays" Type="System.Decimal" DbType="Decimal(8,3)" CanBeNull="true" />
+      <Column Name="GeothermalType" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tLkp_RigType" Member="tLkp_RigTypes">
+    <Type Name="tLkp_RigType">
+      <Column Name="RigTypeID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="RigType" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="RigTypeCode" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="RigGroupCode" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DrillingSpeedMin" Type="System.Decimal" DbType="Decimal(4,2)" CanBeNull="true" />
+      <Column Name="DrillingSpeedMax" Type="System.Decimal" DbType="Decimal(4,2)" CanBeNull="true" />
+      <Column Name="DryHoleDaysMin" Type="System.Decimal" DbType="Decimal(4,2)" CanBeNull="true" />
+      <Column Name="DryHoleDaysMax" Type="System.Decimal" DbType="Decimal(4,2)" CanBeNull="true" />
+      <Column Name="DHCostPerDrilledIntMin" Type="System.Decimal" DbType="Decimal(7,2)" CanBeNull="true" />
+      <Column Name="DHCostPerDrilledIntMax" Type="System.Decimal" DbType="Decimal(7,2)" CanBeNull="true" />
+      <Column Name="DHCostPerDayMin" Type="System.Decimal" DbType="Decimal(7,2)" CanBeNull="true" />
+      <Column Name="DHCostPerDayMax" Type="System.Decimal" DbType="Decimal(7,2)" CanBeNull="true" />
+      <Column Name="TotCostPerDayMin" Type="System.Decimal" DbType="Decimal(7,2)" CanBeNull="true" />
+      <Column Name="TotCostPerDayMax" Type="System.Decimal" DbType="Decimal(7,2)" CanBeNull="true" />
+      <Column Name="WaterDepthMin" Type="System.Decimal" DbType="Decimal(7,2)" CanBeNull="true" />
+      <Column Name="WaterDepthMax" Type="System.Decimal" DbType="Decimal(7,2)" CanBeNull="true" />
+      <Association Name="tLkp_RigType1_tLnk_RigNameType" Member="tLnk_RigNameTypes" ThisKey="RigTypeID" OtherKey="RigTypeID" Type="tLnk_RigNameType" />
+    </Type>
+  </Table>
+</Database>

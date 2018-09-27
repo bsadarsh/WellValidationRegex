@@ -1,0 +1,8 @@
+C:\DPRTDData\DPRTDData\bin\Debug\DPRTDData.dll
+C:\DPRTDData\DPRTDData\bin\Debug\DPRTDData.pdb
+C:\DPRTDData\DPRTDData\bin\Debug\CodeEffects.Rule.dll
+C:\DPRTDData\DPRTDData\obj\Debug\ResolveAssemblyReference.cache
+C:\DPRTDData\DPRTDData\obj\Debug\DPRTDData.dll
+C:\DPRTDData\DPRTDData\obj\Debug\DPRTDData.pdb
+C:\DPRTDData\DPRTDData\bin\Debug\DPRTDValidation.dll
+C:\DPRTDData\DPRTDData\bin\Debug\DPRTDValidation.pdb

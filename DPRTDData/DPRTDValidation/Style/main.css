@@ -1,0 +1,677 @@
+body {
+	background-color: #FAF2EF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 100.01%;
+	color: #000000;
+	text-decoration: none;
+}
+.PageName {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.UserName {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.Section {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	font-weight: bold;
+	text-decoration: none;
+	background-color: #F1DBD3;
+	color: #AC5151;
+	border: 1px solid #C88B8B;
+
+
+
+}
+.MenuBarText {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11pt;
+	font-weight: bold;
+	color: #333333;
+	text-decoration: none;
+}
+.SectionTextBold {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+}
+.ErrorText {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	font-weight: bold;
+	color: #FF0000;
+	text-decoration: none;
+}
+a.Link_Menu:link {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	font-weight: bold;
+	color: #442222;
+	text-decoration: none;
+}
+a.Link_Menu:visited {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	font-weight: bold;
+	color: #442222;
+	text-decoration: none;
+}
+a.Link_Menu:hover {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: underline;
+}
+a.Link_Operator:link {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #7C3F3F;
+	text-decoration: none;
+}
+a.Link_Operator:visited {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #7C3F3F;
+	text-decoration: none;
+}
+a.Link_Operator:hover {
+
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: underline;
+}
+a.Link_OperatorLarge:link {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+}
+a.Link_OperatorLarge:hover {
+	color: #f00;
+	text-decoration: underline;
+}
+
+a.Link_SubMenu:link {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #894141;
+	text-decoration: none;
+}
+a.Link_SubMenu:visited {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #894141;
+	text-decoration: none;
+}
+a.Link_SubMenu:hover {
+
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: underline;
+}
+.SectionLayer {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	font-weight: bold;
+	text-decoration: none;
+	background-color: #F1DBD3;
+	border-top-width: 1px;
+	border-right-width: 2px;
+	border-bottom-width: 2px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #C88B8B;
+	border-right-color: #C88B8B;
+	border-bottom-color: #C88B8B;
+	border-left-color: #C88B8B;
+	color: #AC5151;
+	padding: 5px;
+	overflow: auto;
+	position: static;
+	visibility: visible;
+	height: 493px;
+	width: 280px;
+
+
+}
+.inputtext {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8.5pt;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+}
+.SectionText {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+}
+a.Link_Change:link {
+
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8px;
+	font-weight: bold;
+	color: #894141;
+	text-decoration: none;
+}
+a.Link_Change:visited {
+
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8px;
+	font-weight: bold;
+	color: #894141;
+	text-decoration: none;
+}
+a.Link_Change:hover {
+
+
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: underline;
+}
+.SectionSmallText {
+
+
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8px;
+	font-weight: bold;
+	color: #894141;
+	text-decoration: none;
+}
+.OperatorSelected {
+
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+}
+.DataRow1 {
+	background-color: #F2E2DB;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+	border: none;
+
+
+
+
+}
+.DataRow2 {
+	background-color: #F8EDE9;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+
+
+}
+.DataHeader {
+
+	background-color: #ECCEC4;
+}
+.DataRowLine {
+
+
+	background-color: #EFD8CF;
+}
+.SectionTitle {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #AC5151;
+	margin: 0px;
+	padding: 0px;
+
+}
+
+.APRSectionTextBold {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+	background-color: #cccccc;
+}
+.DataRow1APR {
+
+	background-color: #cccccc;
+	border-bottom-width: 1px;
+	border-bottom-style: none;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;
+}
+.DataRow2APR {
+	background-color: #eeeeee;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+	border: 1px none;
+
+}
+
+
+.DataRow1CPR {
+
+	background-color: #E9F8EA;
+	border-bottom-width: 1px;
+	border-bottom-style: none;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;
+}
+.DataRow2CPR {
+	background-color: #E2F5E3;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+	border: 1px none;
+
+}
+.DataRow1DPR {
+	background-color: #FDF7EA;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+	border: 1px none;
+
+}
+.DataRow2DPR {
+
+	background-color: #FCF3E0;
+	border-bottom-width: 1px;
+	border-bottom-style: none;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+}
+.Seperator {
+	background-color: #C98D8D;
+}
+.DataRow1sep {
+	background-color: #F2E2DB;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+	border-top: 1px dashed #BC7070;
+
+
+
+}
+.DataRow2sep {
+	background-color: #F5E8E2;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+	border-top: 1px dashed #BC7070;
+
+
+
+}
+.HRLine {
+	background-color: #C88B8B;
+	overflow: hidden;
+	position: static;
+	visibility: visible;
+	height: 1px;
+	width: 100%;
+	margin-top: 3px;
+	margin-bottom: 0px;
+
+}
+.SectionTitleLarger {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #AC5151;
+	margin: 0px;
+	padding: 0px;
+}
+.SectionTextBoldLarger {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #333333;
+	text-decoration: none;
+	padding-top: 8px;
+
+
+}
+.SectionDPR {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	font-weight: bold;
+	text-decoration: none;
+	background-color: #F9E9CC;
+	border-top-width: 1px;
+	border-right-width: 2px;
+	border-bottom-width: 2px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #C88B8B;
+	border-right-color: #C88B8B;
+	border-bottom-color: #C88B8B;
+	border-left-color: #C88B8B;
+	color: #AC5151;
+}
+.SectionCPR {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	font-weight: bold;
+	text-decoration: none;
+	background-color: #D3F1D5;
+	border-top-width: 1px;
+	border-right-width: 2px;
+	border-bottom-width: 2px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #C88B8B;
+	border-right-color: #C88B8B;
+	border-bottom-color: #C88B8B;
+	border-left-color: #C88B8B;
+	color: #AC5151;
+}
+.SectionTextBoldRed {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #FF0000;
+	text-decoration: none;
+}
+.DataRow1Red {
+
+	background-color: #CCCCCC;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+	border: none;
+}
+.DataRowSelected {
+	background-color: #E2B9A9;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #000000;
+
+}
+.SectionSmallTextRed {
+
+
+
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8px;
+	font-weight: bold;
+	color: #FF0000;
+	text-decoration: none;
+}
+.SectionBackground {
+	background-color: #F1DBD3;
+}
+.DataMainHeading {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8.5pt;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none;
+	background-color: #D3A1A1;
+}
+.SectionTextBoldRedLarge {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #FF0000;
+	text-decoration: none;
+
+}
+.SectionTextBoldWhite {
+
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.DataHeaderDark {
+
+
+	background-color: #E2B5A5;
+}
+
+.HeaderCell {
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 0px;
+	padding-left: 10px;
+}
+.Red {
+
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	color: #FF0000;
+	text-decoration: none;
+}
+.RedBold {
+
+
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #FF0000;
+	text-decoration: none;
+}
+.DataHeaderDPR {
+	background-color: #F9E6C1;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+	border: 1px none;
+}
+.DataHeaderCPR {
+	background-color: #CAEECD;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+	border: 1px none;
+}
+.WellDataHeaderDPR {
+ background-color: #F9E6C1;
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: 8pt;
+ font-weight: bold;
+ color: #000000;
+}
+
+.WellDataHeaderCPR {
+ background-color: #CAEECD;
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: 8pt;
+ font-weight: bold;
+ color: #000000;
+}
+.WellDataHeaderDPRGroupSep {
+	background-color: #F9E6C1;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	font-weight: bold;
+	color: #000000;
+	border-left-width: 2px;
+	border-left-style: solid;
+	border-left-color: #F8DFB1;
+
+}
+
+.WellDataHeaderCPRGroupSep {
+	background-color: #CAEECD;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	font-weight: bold;
+	color: #000000;
+	border-left-width: 2px;
+	border-left-style: solid;
+	border-left-color: #98DE9D;
+
+}
+.DataRow1CPRGroupSep {
+	background-color: #E9F8EA;
+	border-bottom-width: 1px;
+	border-bottom-style: none;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-left-width: 2px;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: solid;
+	border-left-color: #98DE9D;
+
+}
+.DataRow2CPRGroupSep {
+	background-color: #E2F5E3;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+	border-top: 0px none;
+	border-right: 0px none;
+	border-bottom: 0px none;
+	border-left: 2px solid #98DE9D;
+
+}
+.DataRow1DPRGroupSep {
+	background-color: #FDF7EA;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+	border-top: 0px none;
+	border-right: 0px none;
+	border-bottom: 0px none;
+	border-left: 2px solid #F8DFB1;
+
+}
+.DataRow2DPRGroupSep {
+	background-color: #FCF3E0;
+	border-bottom-width: 0px;
+	border-bottom-style: none;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-left-width: 2px;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: solid;
+	border-left-color: #F8DFB1;
+
+}
+form {
+	display: inline;
+}
+.ho {
+	color: #FF0000;
+}
